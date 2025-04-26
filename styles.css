@@ -1,0 +1,227 @@
+    :root {
+        --fondo-principal: #0a0a0a;
+        --acento-cian: #00eaff;
+        --acento-azul: #0077ff;
+        --texto-principal: #d0d0d0;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Inter', sans-serif;
+        background: #0a0a0a; /* color base único */
+        color: var(--texto-principal);
+    }
+    
+    /* Nav */
+    header {
+        background: linear-gradient(to bottom, #0a0a0a, transparent);
+        padding: 1rem 2rem;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo span {
+        font-size: 1.5rem;
+        background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: var(--texto-principal);
+        font-weight: 600;
+        transition: color 0.3s;
+    }
+    
+    nav a:hover {
+        color: var(--acento-cian);
+    }
+    
+    /* Hero Section */
+    .hero {
+        min-height: 90vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        text-align: center;
+        background: linear-gradient(to bottom, transparent, #00141a);
+    }
+    
+    .image-container img {
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
+        object-fit: cover;
+        margin-bottom: 1.5rem;
+    }
+    
+    .mensaje {
+        margin-left: 60px;
+        text-align: left; /* Alinea todo a la izquierda */
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        }
+    .mensaje h2 {
+        font-size: 3rem;
+        background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+    
+    .mensaje-llamativo {
+        font-size: 1.2rem;
+        color: var(--texto-principal);
+        max-width: 600px;
+        margin: 0 auto 1.5rem;
+    }
+    
+    .mensaje-llamativo span {
+        background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: 700;
+    }
+    
+    .cta {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: var(--acento-cian);
+        color: #000;
+        font-weight: bold;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: background 0.3s;
+        text-align: center;
+    }
+    
+    .cta:hover {
+        background: var(--acento-azul);
+    }
+    
+    /* Proyectos */
+    #proyectos {
+        padding: 5rem 2rem;
+        background: linear-gradient(to bottom, #00141a, #000a0f);
+        text-align: center;
+    }
+    
+    #proyectos h2 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: var(--acento-cian);
+    }
+    
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .card {
+        background: #0d0d0d;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 0 10px #00141a;
+        max-width: 300px;
+    }
+    
+    .card h3 {
+        color: var(--acento-cian);
+        margin-bottom: 1rem;
+    }
+    
+    .card p {
+        margin-bottom: 1.5rem;
+    }
+    
+    .btn-ver {
+        background: var(--acento-cian);
+        color: #000;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+    
+    .btn-ver:hover {
+        background: var(--acento-azul);
+    }
+    
+    /* Contacto */
+    #contacto {
+        padding: 5rem 2rem;
+        background: #000a0f;
+        text-align: center;
+    }
+    
+    #contacto h2 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: var(--acento-cian);
+    }
+    
+    .formulario {
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .campo input,
+    .campo textarea {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 10px;
+        background: #0d0d0d;
+        color: var(--texto-principal);
+        font-size: 1rem;
+        resize: none;
+    }
+    
+    .btn-enviar {
+        padding: 1rem;
+        background: var(--acento-cian);
+        color: #000;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .btn-enviar:hover {
+        background: var(--acento-azul);
+    }
+    
+    /* Footer */
+    footer {
+        background: #000;
+        padding: 2rem;
+        text-align: center;
+        color: #666;
+        font-size: 0.9rem;
+    }
+    

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio - Maquetación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <span>< /nanoDev ></span> <!-- Aquí es donde iría tu logo o alias -->
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                ☰
+            </button>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre mí</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal  -->
+    <section class="hero">
+        <div class="image-container">
+            <img src="./Mi imagen de ChatGPT.png" alt="Imagen de tu perfil" />
+        </div>
+        <div class="mensaje">
+            <p>Hola! me llamo Agustín Sosa.</p>
+            <h2>Soy desarrollador</h2>
+            <p class="mensaje-llamativo">Voy a poner todo mi esfuerzo en cada proyecto, porque <span>TÚ ÉXITO</span> también es el mío.</p>
+            <a href="#proyectos" class="cta">Trabajemos juntos</a>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="cards">
+            <!-- Solo una tarjeta de ejemplo que luego se puede manipular con JS -->
+            <div class="card">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto. ¡Aquí va la información importante!</p>
+                <a href="#" class="btn-ver">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <form class="formulario">
+            <div class="campo">
+                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+            </div>
+            <div class="campo">
+                <input type="email" name="email" placeholder="Tu Email" required>
+            </div>
+            <div class="campo">
+                <textarea name="mensaje" placeholder="Tu Mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2025 - Hecho con café y código 💻</p>
+        </footer>
+
+</body>
+</html>
