@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth; /* Esto hará que el desplazamiento sea suave */
+}
+    
     :root {
         --fondo-principal: #0a0a0a;
         --acento-cian: #00eaff;
@@ -12,9 +16,15 @@
     }
     
     body {
-        font-family: 'Inter', sans-serif;
-        background: #0a0a0a; /* color base único */
+        font-family: 'Poppins', sans-serif;
+        background-color: #000;
         color: var(--texto-principal);
+        transition: opacity 1s ease-in-out;
+    }
+
+    .fade-out {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
     }
     
     /* Nav */
@@ -68,8 +78,8 @@
     
     .image-container img {
         width: 300px;
-        height: 300px;
-        border-radius: 30px;
+        height: 380px;
+        border-radius: 20px;
         object-fit: cover;
         margin-bottom: 1.5rem;
     }
@@ -105,6 +115,42 @@
         font-weight: 700;
     }
     
+    .oculto {
+        display: none;
+    }
+
+    /* Estilos para el mensaje resumen */
+/* Estilos para el mensaje resumen */
+.mensaje-resumen {
+    margin-left: 60px;
+    text-align: left; /* Alinea todo a la izquierda */
+    max-width: 560px; /* Limitamos el ancho para evitar que se estire demasiado */
+    margin: 0 auto; /* Centramos el bloque en la página */
+    padding: 2rem; /* Agregamos un poco de espacio alrededor */
+    color: var(--texto-principal); /* Usamos el color de texto principal */
+    line-height: 1.6; /* Mejoramos la legibilidad aumentando la altura de línea */
+    font-weight: 400; /* Establecemos un peso normal para el texto */
+}
+
+
+/* Si quieres agregar un efecto de transición al texto cuando aparece */
+.mensaje-resumen {
+    opacity: 1;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+.mensaje-resumen.mostrar {
+    opacity: 1;
+    visibility: visible;
+}   
+
+.highlight {
+    background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
     .cta {
         display: inline-block;
         padding: 0.75rem 1.5rem;
@@ -115,12 +161,44 @@
         text-decoration: none;
         transition: background 0.3s;
         text-align: center;
+        margin: 1rem auto;
     }
     
     .cta:hover {
         background: var(--acento-azul);
     }
     
+    /* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* Estilos para el nuevo contenido */
+.nuevo-contenido {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease;  /* Transición suave de opacidad */
+    /* O puedes usar keyframes si prefieres que se maneje desde JavaScript */
+}
+
+/* Cuando se muestra el contenido */
+.nuevo-contenido.mostrar {
+    animation: fadeIn 1s forwards;  /* Aparece con la animación */
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Puedes hacer que el botón también se vea animado */
+#nuevo-boton {
+    transition: opacity 1s ease;  /* Transición para que el botón también se desvanezca */
+}
     /* Proyectos */
     #proyectos {
         padding: 5rem 2rem;
