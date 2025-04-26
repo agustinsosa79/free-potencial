@@ -13,14 +13,14 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--fondo-principal); /* Fondo homogéneo */
+    background-color: #070b1a; /* Fondo homogéneo */
     color: var(--texto-principal);
     transition: opacity 1s ease-in-out;
 }
 
 /* Header */
 header {
-    background-color: var(--fondo-principal); /* Fondo homogéneo */
+    background: linear-gradient(to bottom, #0a0a0a, transparent);
     padding: 1rem 2rem;
 }
 
@@ -59,7 +59,7 @@ nav a:hover {
 /* Info Servicio */
 #info-servicio {
     padding: 5rem 2rem;
-    background-color: var(--fondo-principal); /* Fondo homogéneo */
+    background-color: #070b1a; /* Fondo homogéneo */
     text-align: center;
 }
 
@@ -134,7 +134,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background-color: var(--fondo-principal); /* Fondo homogéneo */
+    background: linear-gradient(to top, #0a0a0a, transparent);
     padding: 2rem;
     text-align: center;
     color: var(--texto-principal);

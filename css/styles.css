@@ -17,7 +17,7 @@ html {
     
     body {
         font-family: 'Poppins', sans-serif;
-        background-color: #000;
+        background-color: #10162c;
         color: var(--texto-principal);
         transition: opacity 1s ease-in-out;
     }
@@ -151,7 +151,6 @@ html {
     background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
     -webkit-background-clip: text;
     background-clip: text; /* Estándar, para otros navegadores */
-
     color: transparent;
     font-weight: 700;
 }
