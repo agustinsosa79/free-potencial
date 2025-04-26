@@ -34,6 +34,7 @@ nav {
     font-size: 1.5rem;
     background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
     -webkit-background-clip: text;
+    background-clip: text; /* Estándar, para otros navegadores */
     color: transparent;
     font-weight: bold;
 }
@@ -67,6 +68,8 @@ nav a:hover {
     margin-bottom: 3rem;
     background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
     -webkit-background-clip: text;
+    background-clip: text; /* Estándar, para otros navegadores */
+
     color: transparent;
 }
 
@@ -99,6 +102,8 @@ nav a:hover {
     font-size: 1.8rem;
     background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
     -webkit-background-clip: text;
+    background-clip: text; /* Estándar, para otros navegadores */
+
     color: transparent;
     margin-bottom: 1.5rem;
 }
