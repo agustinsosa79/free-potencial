@@ -40,7 +40,7 @@ html {
     }
     
     .logo span {
-        font-size: 1.5rem;
+        font-size: 2rem;
         background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
         -webkit-background-clip: text;
         background-clip: text; /* Estándar, para otros navegadores */
@@ -94,7 +94,7 @@ html {
         gap: 1rem;
         }
     .mensaje h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
         -webkit-background-clip: text;
         background-clip: text; /* Estándar, para otros navegadores */
