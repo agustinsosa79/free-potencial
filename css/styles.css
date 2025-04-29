@@ -1,346 +1,577 @@
-html {
-    scroll-behavior: smooth; /* Esto hará que el desplazamiento sea suave */
-}
-    
-    :root {
-        --fondo-principal: #0a0a0a;
-        --acento-cian: #00eaff;
-        --acento-azul: #0077ff;
-        --texto-principal: #d0d0d0;
+    html {
+        scroll-behavior: smooth; /* Esto hará que el desplazamiento sea suave */
     }
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #10162c;
-        color: var(--texto-principal);
-        transition: opacity 1s ease-in-out;
-    }
+        
+        :root {
+            --fondo-principal: #0a0a0a;
+            --acento-cian: #00eaff;
+            --acento-azul: #0077ff;
+            --texto-principal: #d0d0d0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #10162c;
+            color: var(--texto-principal);
+            transition: opacity 1s ease-in-out;
+        }
 
-    .fade-out {
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    
-    /* Nav */
-    header {
-        background: linear-gradient(to bottom, #0a0a0a, transparent);
-        padding: 1rem 2rem;
-    }
-    
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .logo span {
-        font-size: 2rem;
-        background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
-        -webkit-background-clip: text;
-        background-clip: text; /* Estándar, para otros navegadores */
-        color: transparent;
-        font-weight: bold;
-    }
-    
-    nav ul {
-        list-style: none;
-        display: flex;
-        gap: 2rem;
-    }
-    
-    nav a {
-        text-decoration: none;
-        color: var(--texto-principal);
-        font-weight: 600;
-        transition: color 0.3s;
-    }
-    
-    nav a:hover {
-        color: var(--acento-cian);
-    }
-    
-    /* Hero Section */
-    .hero {
-        min-height: 90vh;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem;
-        text-align: center;
-        background: linear-gradient(to bottom, transparent, #00141a);
-    }
-    
-    .image-container img {
-        background-color: transparent;
-        box-shadow: 0 0 50px #0b5268;
-        width: 300px;
-        height: 380px;
-        border-radius: 20px;
-        object-fit: cover;
-        margin-bottom: 1.5rem;
-    }
-    
-    .mensaje {
+        .fade-out {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        /* Nav */
+        header {
+            background: linear-gradient(to bottom, #0a0a0a, transparent);
+            padding: 1rem 2rem;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo span a {
+            font-size: 2rem;
+            background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
+            -webkit-background-clip: text;
+            background-clip: text; /* Estándar, para otros navegadores */
+            color: transparent;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--texto-principal);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--acento-cian);
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+            background: linear-gradient(to bottom, transparent, #00141a);
+        }
+        
+        .image-container img {
+            background-color: transparent;
+            box-shadow: 0 0 50px #0b5268;
+            width: 300px;
+            height: 380px;
+            border-radius: 20px;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+        }
+        
+        .mensaje {
+            margin-left: 60px;
+            text-align: left; /* Alinea todo a la izquierda */
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            }
+        .mensaje h2 {
+            font-size: 2rem;
+            background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
+            -webkit-background-clip: text;
+            background-clip: text; /* Estándar, para otros navegadores */
+            color: transparent;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        
+        .mensaje-llamativo {
+            font-size: 1.2rem;
+            color: var(--texto-principal);
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .mensaje-llamativo span {
+            background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
+            -webkit-background-clip: text;
+            background-clip: text; /* Estándar, para otros navegadores */
+            color: transparent;
+            font-weight: 700;
+        }
+        
+        .oculto {
+            display: none;
+        }
+
+        /* Estilos para el mensaje resumen */
+    /* Estilos para el mensaje resumen */
+    .mensaje-resumen {
         margin-left: 60px;
         text-align: left; /* Alinea todo a la izquierda */
-        max-width: 500px;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        }
-    .mensaje h2 {
-        font-size: 2rem;
-        background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
-        -webkit-background-clip: text;
-        background-clip: text; /* Estándar, para otros navegadores */
-        color: transparent;
-        font-weight: 800;
-        margin-bottom: 1rem;
+        max-width: 560px; /* Limitamos el ancho para evitar que se estire demasiado */
+        margin: 0 auto; /* Centramos el bloque en la página */
+        padding: 2rem; /* Agregamos un poco de espacio alrededor */
+        color: var(--texto-principal); /* Usamos el color de texto principal */
+        line-height: 1.6; /* Mejoramos la legibilidad aumentando la altura de línea */
+        font-weight: 400; /* Establecemos un peso normal para el texto */
     }
-    
-    .mensaje-llamativo {
-        font-size: 1.2rem;
-        color: var(--texto-principal);
-        max-width: 600px;
-        margin: 0 auto 1.5rem;
+
+
+    /* Si quieres agregar un efecto de transición al texto cuando aparece */
+    .mensaje-resumen {
+        opacity: 1;
+        transition: opacity 1s ease, visibility 1s ease;
     }
-    
-    .mensaje-llamativo span {
+
+    .mensaje-resumen.mostrar {
+        opacity: 1;
+        visibility: visible;
+    }   
+
+    .highlight {
         background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
         -webkit-background-clip: text;
         background-clip: text; /* Estándar, para otros navegadores */
         color: transparent;
         font-weight: 700;
     }
-    
-    .oculto {
-        display: none;
+
+        .cta {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: var(--acento-cian);
+            color: #000;
+            font-weight: bold;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background 0.3s;
+            text-align: center;
+            margin: 1rem auto;
+        }
+        
+        .cta:hover {
+            background: var(--acento-azul);
+        }
+        
+        /* Animación de desvanecimiento */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            visibility: hidden;
+        }
+        to {
+            opacity: 1;
+            visibility: visible;
+        }
     }
 
-    /* Estilos para el mensaje resumen */
-/* Estilos para el mensaje resumen */
-.mensaje-resumen {
-    margin-left: 60px;
-    text-align: left; /* Alinea todo a la izquierda */
-    max-width: 560px; /* Limitamos el ancho para evitar que se estire demasiado */
-    margin: 0 auto; /* Centramos el bloque en la página */
-    padding: 2rem; /* Agregamos un poco de espacio alrededor */
-    color: var(--texto-principal); /* Usamos el color de texto principal */
-    line-height: 1.6; /* Mejoramos la legibilidad aumentando la altura de línea */
-    font-weight: 400; /* Establecemos un peso normal para el texto */
-}
-
-
-/* Si quieres agregar un efecto de transición al texto cuando aparece */
-.mensaje-resumen {
-    opacity: 1;
-    transition: opacity 1s ease, visibility 1s ease;
-}
-
-.mensaje-resumen.mostrar {
-    opacity: 1;
-    visibility: visible;
-}   
-
-.highlight {
-    background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
-    -webkit-background-clip: text;
-    background-clip: text; /* Estándar, para otros navegadores */
-    color: transparent;
-    font-weight: 700;
-}
-
-    .cta {
-        display: inline-block;
-        padding: 0.75rem 1.5rem;
-        background: var(--acento-cian);
-        color: #000;
-        font-weight: bold;
-        border-radius: 10px;
-        text-decoration: none;
-        transition: background 0.3s;
-        text-align: center;
-        margin: 1rem auto;
-    }
-    
-    .cta:hover {
-        background: var(--acento-azul);
-    }
-    
-    /* Animación de desvanecimiento */
-@keyframes fadeIn {
-    from {
+    /* Estilos para el nuevo contenido */
+    .nuevo-contenido {
         opacity: 0;
         visibility: hidden;
+        transition: opacity 1s ease, visibility 1s ease;  /* Transición suave de opacidad */
+        /* O puedes usar keyframes si prefieres que se maneje desde JavaScript */
     }
-    to {
-        opacity: 1;
-        visibility: visible;
-    }
-}
 
-/* Estilos para el nuevo contenido */
-.nuevo-contenido {
+    /* Cuando se muestra el contenido */
+    .nuevo-contenido.mostrar {
+        animation: fadeIn 1s forwards;  /* Aparece con la animación */
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* Puedes hacer que el botón también se vea animado */
+    #nuevo-boton {
+        transition: opacity 1s ease;  /* Transición para que el botón también se desvanezca */
+    }
+        /* Proyectos */
+        #proyectos {
+            padding: 5rem 2rem;
+            background: linear-gradient(to bottom, #00141a, #000a0f);
+            text-align: center;
+        }
+        
+        #proyectos h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--acento-cian);
+            background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
+            -webkit-background-clip: text;
+        background-clip: text; /* Estándar, para otros navegadores */
+        color: transparent;
+        font-weight: bold;
+        }
+
+        .titulo-proyectos, .card h3 {
+            background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        
+        .cards {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+        
+        .card {
+            background: #0d0d0d;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #00141a;
+            max-width: 300px;
+        }
+        
+        .card h3 {
+            color: var(--acento-cian);
+            margin-bottom: 1rem;
+        }
+        
+        .card p {
+            margin-bottom: 1.5rem;
+        }
+
+        .card-img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+        
+        .btn-ver {
+            background: var(--acento-cian);
+            color: #000;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        
+        .btn-ver:hover {
+            background: var(--acento-azul);
+        }
+        
+        .estado {
+            font-style: italic;
+            font-weight: bold;
+            color: #777;
+            margin-top: 0.5rem;
+        }
+        /* Contacto */
+        .contacto {
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+            background: linear-gradient(to top, #00141a, #000a0f);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contacto h2 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        
+        .contacto-subtitulo {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            font-weight: 300;
+            color: #ccc;
+        }
+        
+        .formulario {
+            max-width: 700px;
+            margin: 0 auto;
+            display: grid;
+            gap: 1.75rem;
+            padding: 2rem;
+            border-radius: 1rem;
+            background-color: rgba(255, 255, 255, 0.02);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+        }
+        
+        .campo input,
+        .campo textarea {
+            background: #0d0d0d;
+            width: 100%;
+            padding: 1.2rem 1rem;
+            border: 1px solid #222;
+            border-radius: 0.75rem;
+            font-size: 1rem;
+            color: white;   
+            transition: border 0.3s, box-shadow 0.3s;
+            resize: none;
+        }
+
+        .campo input:focus,
+        .campo textarea:focus {
+            border: 1px solid var(--acento-cian);
+            box-shadow: 0 0 8px var(--acento-cian);
+            outline: none;
+        }
+        
+        .btn-enviar {
+            color: #000;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1rem;
+            background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .btn-enviar:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 12px var(--acento-cian);
+        }
+        
+        .btn-enviar {
+            color: #000;
+            text-decoration: none;
+            padding: 1rem 1rem;
+            border-radius: 8px;
+            font-weight: bold;
+            background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
+
+        }
+        
+        .btn-enviar:hover {
+            background-color: var(--acento-azul);
+            color: white;
+        }
+        
+        
+        /* Footer */
+        footer {
+            background: #000;
+            padding: 2rem;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+
+/* ————— Estilos base del botón hamburguesa ————— */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1100;
+  }
+  .menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: var(--texto-principal);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  /* estado X */
+  .menu-toggle.active span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .menu-toggle.active span:nth-child(2) { opacity: 0; }
+  .menu-toggle.active span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+  
+  /* ————— Media query para tablets y móviles ————— */
+ /* Base: oculto en móviles/tablet */
+@media (max-width: 768px) {
+    /* Botón visible */
+    .menu-toggle { display: flex; }
+  
+    /* Oculto UL fuera de pantalla */
+    .nav-links {
+      display: flex; /* para que funcione flex-direction */
+      position: fixed;
+      top: 0;
+      right: -100%;
+      height: 100vh;
+      width: 70%;
+      background: var(--fondo-principal);
+      flex-direction: column;
+      padding: 4rem 1.5rem;
+      gap: 1.5rem;
+      transition: right 0.4s ease;
+      box-shadow: -4px 0 8px rgba(0,0,0,0.5);
+      z-index: 1000;
+    }
+  
+    /* Cuando tenga la clase .open, se desliza dentro */
+    .nav-links.open {
+      right: 0;
+    }
+
+     /* == HERO adaptado == */
+  .hero {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+  .image-container img {
+    width: 80vw;
+    max-width: 200px;
+    margin-bottom: 1rem;
+  }
+  .mensaje {
+    margin-left: 0;
+    max-width: 90vw;
+  }
+  .mensaje h2 {
+    font-size: 1.6rem;
+  }
+  .mensaje-llamativo {
+    font-size: 1rem;
+    max-width: 90vw;
+  }
+  .cta {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+
+  /* == PROYECTOS adaptados == */
+  #proyectos {
+    padding: 3rem 1rem;
+  }
+  #proyectos h2 {
+    font-size: 2rem;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 3rem 2rem;
+  }
+  
+  /* Cada card como flex-column */
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* empuja el botón abajo */
+    background: #0d0d0d;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #00141a;
+  }
+  
+  /* El contenido que esté antes del botón */
+  .card h3,
+  .card p,
+  .card .estado {
+    margin-bottom: 1rem;
+  }
+  
+  /* Botones en bloque, centrados */
+  .card .btn-ver {
+    align-self: flex-start; /* o center si querés centrarlo */
+    margin-top: auto;        /* obliga al botón a ubicarse abajo */
+    background: var(--acento-cian);
+    color: #000;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .card .btn-ver:hover {
+    background: var(--acento-azul);
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+  .card .btn-ver {
+    width: 100%;
+  }
+  .card .btn-ver + .btn-ver {
+    margin-top: 0.75rem;
+    margin-right: 0;
+  }
+
+  /* == CONTACTO adaptado == */
+  .contacto {
+    padding: 3rem 1rem;
+  }
+  .contacto h2 {
+    font-size: 2rem;
+  }
+  .contacto-subtitulo {
+    font-size: 1rem;
+  }
+  .formulario {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .campo input,
+  .campo textarea {
+    font-size: 0.9rem;
+    padding: 0.9rem;
+  }
+  .btn-enviar {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+  }
+
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 1s ease, visibility 1s ease;  /* Transición suave de opacidad */
-    /* O puedes usar keyframes si prefieres que se maneje desde JavaScript */
-}
-
-/* Cuando se muestra el contenido */
-.nuevo-contenido.mostrar {
-    animation: fadeIn 1s forwards;  /* Aparece con la animación */
-    visibility: visible;
+    transition: opacity 0.3s ease;
+    z-index: 900;
+  }
+  
+  /* Cuando el overlay esté activo */
+  .menu-overlay.active {
     opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Evitar scroll en body cuando el menú esté abierto */
+  body.menu-open {
+    overflow: hidden;
+  }
 }
-
-/* Puedes hacer que el botón también se vea animado */
-#nuevo-boton {
-    transition: opacity 1s ease;  /* Transición para que el botón también se desvanezca */
-}
-    /* Proyectos */
-    #proyectos {
-        padding: 5rem 2rem;
-        background: linear-gradient(to bottom, #00141a, #000a0f);
-        text-align: center;
-    }
-    
-    #proyectos h2 {
-        font-size: 2.5rem;
-        margin-bottom: 3rem;
-        color: var(--acento-cian);
-        background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
-        -webkit-background-clip: text;
-    background-clip: text; /* Estándar, para otros navegadores */
-    color: transparent;
-    font-weight: bold;
-    }
-
-    .titulo-proyectos, .card h3 {
-        background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-    }
-    
-    
-    .cards {
-        display: flex;
-        gap: 40px;
-        justify-content: center;
-    }
-    
-    .card {
-        background: #0d0d0d;
-        padding: 2rem;
-        border-radius: 15px;
-        box-shadow: 0 0 10px #00141a;
-        max-width: 300px;
-    }
-    
-    .card h3 {
-        color: var(--acento-cian);
-        margin-bottom: 1rem;
-    }
-    
-    .card p {
-        margin-bottom: 1.5rem;
-    }
-
-    .card-img {
-        width: 100%;
-        height: auto;
-        border-radius: 1rem;
-        margin-bottom: 1rem;
-        object-fit: cover;
-    }
-    
-    .btn-ver {
-        background: var(--acento-cian);
-        color: #000;
-        text-decoration: none;
-        padding: 0.5rem 1rem;
-        border-radius: 8px;
-        font-weight: bold;
-    }
-    
-    .btn-ver:hover {
-        background: var(--acento-azul);
-    }
-    
-    .estado {
-        font-style: italic;
-        font-weight: bold;
-        color: #777;
-        margin-top: 0.5rem;
-    }
-    /* Contacto */
-    #contacto {
-        padding: 5rem 2rem;
-        background: #000a0f;
-        text-align: center;
-        
-    }
-    
-    #contacto h2 {
-        font-size: 2.5rem;
-        margin-bottom: 3rem;
-        color: var(--acento-cian);
-        background: linear-gradient(90deg, var(--acento-cian), var(--acento-azul));
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-    }
-    
-    .formulario {
-        max-width: 500px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .campo input,
-    .campo textarea {
-        width: 100%;
-        padding: 1rem;
-        border: none;
-        border-radius: 10px;
-        background: #0d0d0d;
-        color: var(--texto-principal);
-        font-size: 1rem;
-        resize: none;
-    }
-    
-    .btn-enviar {
-        padding: 1rem;
-        background: var(--acento-cian);
-        color: #000;
-        border: none;
-        border-radius: 10px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-    
-    .btn-enviar:hover {
-        background: var(--acento-azul);
-    }
-    
-    /* Footer */
-    footer {
-        background: #000;
-        padding: 2rem;
-        text-align: center;
-        color: #666;
-        font-size: 0.9rem;
-    }
-    

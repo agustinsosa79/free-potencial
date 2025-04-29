@@ -4,20 +4,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Servicios - TuNombre</title>
+        <link rel="icon" href="../JS/assets/Nano-dev-removebg-preview.png" type="image/png">
         <link rel="stylesheet" href="../css/styles-service.css"> 
     </head>
     <body>
+        <div class="menu-overlay"></div>
 
         <!-- Header -->
         <header>
             <nav>
                 <div class="logo">
-                    <span>< /nanoDev ></span> 
+                    <span><a href="./index.html">nanoDev</a></span> 
                 </div>
-                <ul>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
                     <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobremi.html">Sobre mí</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -108,6 +115,7 @@
         <footer>
             <p>&copy; 2025 TuNombre. Todos los derechos reservados.</p>
         </footer>
-
+        <div class="menu-overlay"></div>
+        <script src="../JS/port.js"></script>
     </body>
     </html>

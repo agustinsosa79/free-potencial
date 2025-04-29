@@ -3,21 +3,25 @@
     <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Sobre mí – nanoDev</title>
+    <meta name="description" content="Conocé a nanoDev, desarrollador web freelance. Diseño sitios web a medida, con código limpio y asesoramiento gratis. ¡Potenciá tu marca online!">
+    <title>Desarrollador web freelance | Sobre mí - nanoDev</title>
+    <link rel="icon" href="../JS/assets/Nano-dev-removebg-preview.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/sobremi.css     " />
     </head>
     <body>
     <!-- Header y nav idénticos al index -->
+    <div class="menu-overlay"></div>
     <header>
         <nav>
-        <div class="logo"><span>nanoDev</span></div>
-        <ul>
+        <div class="logo"><span><a href="./index.html">nanoDev</a></span></div>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./sobremi.html" class="activo">Sobre mí</a></li>
             <li><a href="./servicios.html">Servicios</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
         </ul>
         </nav>
     </header>
@@ -27,16 +31,17 @@
         <div class="container">
         <h2>Sobre mí</h2>
         <div class="contenido">
-            <p class="introduccion">Soy Agustín Sosa, alias nanoDev. <br>
+            <p class="introduccion">
                 Me dedico full-time a potenciar tu marca, ya sea un emprendimiento, una empresa o tu proyecto personal. <br>
                 Vivo de cada proyecto que hago, así que me involucro de verdad: diseño sitios limpios y veloces con un enfoque estratégico para mejorar tu imagen. Si quieres que más ojos lleguen a tu negocio, tener tu propia página puede ser el impulso que necesitas.</p>
                     
             <div class="diferenciadores">
             <h3>¿Qué me hace diferente?</h3>
             <ul>
+                <li><strong>Asesoramiento gratis:</strong> Si tenés dudas sobre qué tipo de sitio necesitás, te ayudo sin compromiso.</li>
                 <li><strong>Trabajo a medida:</strong> Nada de plantillas estándar: cada sitio nace de tu idea.</li>
                 <li><strong>Código limpio:</strong> Ordenado, documentado y fácil de mantener.</li>
-                <li><strong>Comunicación directa:</strong>Voy a mantener un contacto constante con vos sobre el desarrollo del proyecto</li>
+                <li><strong>Comunicación directa:</strong>Voy a mantener un contacto constante con vos sobre el desarrollo del proyecto.</li>
                 <li><strong>Resultados concretos:</strong>Tener tu propia página habla de la proactividad de tu marca y mejora tu presencia online, lo que se traduce en más clientes.</li>
             </ul>
             </div>
@@ -61,5 +66,7 @@
         <p>&copy; 2025 - Hecho con café y código 💻</p>
     </footer>
 
+    <div class="menu-overlay"></div>
+    <script src="../JS/port.js"></script>
     </body>
     </html>
