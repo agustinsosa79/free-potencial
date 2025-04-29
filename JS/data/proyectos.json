@@ -1,0 +1,30 @@
+{    "projects": [
+        {
+        "id": 1,
+        "name": "Ecommerce-demo",
+        "descripcion": "Vista de tienda online",
+        "tecnologias": ["Axios", "React", "Figma"],
+        "repositorio": "https://github.com/agustinsosa79/Ecommerce-demo",
+        "liveDemo": "En proceso",
+        "imagen": "../JS/assets/ecommerce-demo.png"
+        },
+        {
+        "id": 2,
+        "name": "Panel de administración",
+        "descripcion": "Panel para eliminar, agregar, editar productos y/o actualizar precios",
+        "tecnologias": ["JavaScript"],
+        "repositorio": "https://github.com/agustinsosa79/crudfakestoreAPI",
+        "liveDemo": "https://crudfakeaapi.netlify.app/",
+        "imagen": "../JS/assets/Panel-de-admin.png"
+        },
+        {
+        "id": 3,
+        "name": "Landing page para personal trainer",
+        "descripcion": "Pagina para personal trainer profesional",
+        "tecnologias": ["React", "Figma"],
+        "repositorio": "En proceso",
+        "liveDemo": "En proceso",
+        "imagen": "../JS/assets/personal-trainer.png"
+        }
+    ]
+}
