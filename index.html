@@ -1,89 +1,89 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Soy nanoDev, desarrollador web freelance. Hago sitios web a medida para emprendedores y negocios que quieren destacar en internet. Asesoramiento gratuito.">
-    <title>Desarrollador web freelance | Diseño de sitios a medida</title>
-    <link rel="icon" href="../JS/assets/Nano-dev-removebg-preview.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css" />
-</head>
-<body>
-    <div class="menu-overlay"></div>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">
-                <span><a href="./index.html">nanoDev</a></span>
-            </div>
-            <button class="menu-toggle" aria-label="Abrir menú">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./html/sobremi.html">Sobre mí</a></li>
-                <li><a href="./html/servicios.html">Servicios</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Sección Principal  -->
-    <section class="hero">
-        <div class="image-container">
-            <img src="../JS/assets/Programador en un ambiente futurista.png" alt="Imagen de tu perfil" />
-        </div>
-        <div class="mensaje">
-            <p>¡Hola! mi nombre es Agustín sosa.</p>
-            <h2>< / Soy desarrollador ></h2>
-            <p class="mensaje-llamativo">Construyo webs y apps que nacen de ideas reales,  
-                y terminan siendo negocios que <span>FUNCIONAN.</span></p>
-            <a href="#" class="cta">Trabajemos juntos</a>
-        </div>
-    
-        <!-- Contenido nuevo que aparecerá después de que se presione el botón -->
-        <div class="nuevo-contenido oculto">
-            <p class="mensaje-resumen">Estoy seguro de que un sitio web bien diseñado puede marcar la diferencia en tu negocio. Te ayudo a mejorar tu <span class="highlight">presencia online</span> de manera única y personalizada, trabajando para que <span class="highlight">TÚ marca se destaque y atraiga a más clientes.</span> Si tienes alguna idea en mente, no dudes en contarme y creamos algo increíble. Si querés ver cómo podemos hacerlo, dale clic al botón y hablemos de tus proyectos. Estoy aca para ayudarte a hacer realidad tus ideas y llevar tu negocio al siguiente nivel.</p>
-            <a href="#servicios" class="cta" id="nuevo-boton"></a>
-        </div>
-    </section>
-
-    <!-- Proyectos -->
-    <section id="proyectos">
-        <h2>Mis Proyectos</h2>
-        <div class="cards" id="cards-container">
-            <!-- Aquí se insertarán dinámicamente las cards -->
-        </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto" class="contacto">
-        <h2>¿Hablamos?</h2>
-        <p class="contacto-subtitulo">Si sos un emprendedor o tenes un negocio que quieras potenciar con tu imagen, Contame tu idea, proyecto o problema. Estoy listo para ayudarte a hacerla realidad 🚀</p>
-        <form name="contacto"  method="POST" class="formulario" data-netlify="true">
-            <input type="hidden" name="form-name" value="contacto">
-          <div class="campo">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Tu Nombre" required>
-          </div>
-          <div class="campo">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Tu Email" required>
-          </div>
-          <div class="campo">
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" placeholder="Contame qué necesitás..." rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn-enviar">¡Quiero contactarte!</button>
-        </form>
-      </section>
-        <footer>    
-            <p>&copy; 2025 - Hecho con café y código 💻</p>
-        </footer>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Soy nanoDev, desarrollador web freelance. Hago sitios web a medida para emprendedores y negocios que quieren destacar en internet. Asesoramiento gratuito.">
+        <title>Desarrollador web freelance | Diseño de sitios a medida</title>
+        <link rel="icon" href="../JS/assets/Nano-dev-removebg-preview.png" type="image/png">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
         <div class="menu-overlay"></div>
-    <script src="../JS/port.js"></script>
-</body>
-</html>
+        <!-- Header -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <span><a href="./index.html">nanoDev</a></span>
+                </div>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./html/sobremi.html">Sobre mí</a></li>
+                    <li><a href="./html/servicios.html">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Sección Principal  -->
+        <section class="hero">
+            <div class="image-container">
+                <img src="../JS/assets/Programador en un ambiente futurista.png" alt="Imagen de tu perfil" />
+            </div>
+            <div class="mensaje">
+                <p>¡Hola! mi nombre es Agustín sosa.</p>
+                <h2>< / Soy desarrollador ></h2>
+                <p class="mensaje-llamativo">Construyo webs y apps que nacen de ideas reales,  
+                    y terminan siendo negocios que <span>FUNCIONAN.</span></p>
+                <a href="#" class="cta">Trabajemos juntos</a>
+            </div>
+        
+            <!-- Contenido nuevo que aparecerá después de que se presione el botón -->
+            <div class="nuevo-contenido oculto">
+                <p class="mensaje-resumen">Estoy seguro de que un sitio web bien diseñado puede marcar la diferencia en tu negocio. Te ayudo a mejorar tu <span class="highlight">presencia online</span> de manera única y personalizada, trabajando para que <span class="highlight">TÚ marca se destaque y atraiga a más clientes.</span> Si tienes alguna idea en mente, no dudes en contarme y creamos algo increíble. Si querés ver cómo podemos hacerlo, dale clic al botón y hablemos de tus proyectos. Estoy aca para ayudarte a hacer realidad tus ideas y llevar tu negocio al siguiente nivel.</p>
+                <a href="#servicios" class="cta" id="nuevo-boton"></a>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos">
+            <h2>Mis Proyectos</h2>
+            <div class="cards" id="cards-container">
+                <!-- Aquí se insertarán dinámicamente las cards -->
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="contacto">
+            <h2>¿Hablamos?</h2>
+            <p class="contacto-subtitulo">Si sos un emprendedor o tenes un negocio que quieras potenciar con tu imagen, Contame tu idea, proyecto o problema. Estoy listo para ayudarte a hacerla realidad 🚀</p>
+            <form name="contacto"  method="POST" class="formulario" data-netlify="true">
+                <input type="hidden" name="form-name" value="contacto">
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Tu Nombre" required>
+            </div>
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Tu Email" required>
+            </div>
+            <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" placeholder="Contame qué necesitás..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">¡Quiero contactarte!</button>
+            </form>
+        </section>
+            <footer>    
+                <p>&copy; 2025 - Hecho con café y código 💻</p>
+            </footer>
+            <div class="menu-overlay"></div>
+        <script src="../JS/port.js"></script>
+    </body>
+    </html>
